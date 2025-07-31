@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know the Country by Its Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Know the Country by Its Site</h1>
+            <div class="progress">
+                <span id="question-counter">Question 1 of 10</span>
+                <span id="score-display">Score: 0/0</span>
+            </div>
+            <button id="new-game-btn" class="new-game-btn">Start New Game</button>
+        </header>
+
+        <main id="game-area">
+            <div id="question-section">
+                <div class="image-container">
+                    <img id="country-image" src="" alt="Country site" />
+                </div>
+                
+                <div class="question">
+                    <h2>Which country is this?</h2>
+                    <div class="options">
+                        <button class="option-btn" data-answer=""></button>
+                        <button class="option-btn" data-answer=""></button>
+                        <button class="option-btn" data-answer=""></button>
+                        <button class="option-btn" data-answer=""></button>
+                    </div>
+                </div>
+
+                <div id="feedback" class="feedback hidden">
+                    <p id="feedback-message"></p>
+                    <button id="next-btn">Next Question</button>
+                </div>
+            </div>
+        </main>
+
+        <div id="final-score" class="final-score hidden">
+            <h2>Game Complete!</h2>
+            <p id="final-message"></p>
+            <p id="final-score-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
